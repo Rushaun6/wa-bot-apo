@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Bot Chat</title>
+<link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#1c1410"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<link rel="stylesheet" href="/css/base.css"></head><body>
+<section id="login"><h1>💬 Bot Chat</h1><form id="loginf"><input id="num" inputmode="numeric" placeholder="WhatsApp number (digits only)" required><input id="pin" inputmode="numeric" maxlength="4" placeholder="4-digit PIN (set it the first time)" required><button>Enter</button><p id="err"></p></form></section>
+<main id="app" hidden>
+<header id="top"><div id="banner"></div><h1 id="gname"></h1></header>
+<div id="views">
+<section id="v-chat"><div id="msgs"></div><form id="sendf"><input id="txt" autocomplete="off" placeholder="Message or .slots 100"><button>➤</button></form></section>
+<section id="v-pets" hidden></section><section id="v-me" hidden></section><section id="v-group" hidden></section>
+</div>
+<nav id="tabs"><button data-v="chat">💬</button><button data-v="pets">🐾</button><button data-v="me">🙂</button><button data-v="group">⚙️</button></nav>
+</main><script type="module" src="/js/app.js"></script></body></html>
